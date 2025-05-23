@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS orders_items (
 -- Create Shipping Table
 CREATE TABLE IF NOT EXISTS shipping (
     delivery_id BIGINT PRIMARY KEY,
-    delivery_status ENUM('advance_shipping', 'late_delivery', 'shipping_canceled', 'shipping_on_time'),
+    delivery_status ENUM('Advance shipping', 'Late delivery', 'Shipping canceled', 'Shipping on time'),
     market_name ENUM('Africa', 'Europe', 'LATAM', 'Pacific Asia', 'USCA'),
     shipping_mode ENUM('Standard Class', 'First Class', 'Second Class', 'Same Day'),
     days_for_shipping_real INT CHECK (days_for_shipping_real >= 0),
